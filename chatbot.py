@@ -15,8 +15,7 @@ response = client.chat.completions.create(
     model = model,
     messages = messages
 )
+
 response_for_user = response.choices[0].message.content
 
 print("\n" + response_for_user + "\n")
-
-
